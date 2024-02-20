@@ -1,0 +1,124 @@
+.container {
+  margin: 200px auto;
+  width: 1400px;
+  height: 900px;
+  background-image: linear-gradient(
+    0deg,
+    hsl(240deg 100% 20%) 0%,
+    hsl(246deg 62% 29%) 11%,
+    hsl(246deg 44% 38%) 22%,
+    hsl(245deg 32% 46%) 33%,
+    hsl(244deg 29% 55%) 44%,
+    hsl(242deg 31% 63%) 56%,
+    hsl(240deg 32% 72%) 67%,
+    hsl(237deg 35% 80%) 78%,
+    hsl(235deg 40% 89%) 89%,
+    hsl(233deg 69% 97%) 100%
+  );
+  position: relative;
+}
+.boat {
+  position: absolute;
+  width: 300px;
+  border-top: 100px solid red;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  height: 0;
+  bottom: 10px;
+  left: 300px;
+}
+.boat::after {
+  content: "";
+  background-color: red;
+  -webkit-transform: skew(111deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  bottom: 100px;
+  right: -182px;
+  position: absolute;
+  width: 11px;
+  height: 63px;
+}
+.sun {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border-radius: 50%;
+  top: 130px;
+  left: 160px;
+}
+
+.boat-nose {
+  position: absolute;
+  bottom: 142px;
+  width: 5px;
+  height: 236px;
+  -webkit-transform: skew(45deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  background-color: grey;
+  left: 752px;
+}
+.boat-nose::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 4px solid transparent;
+  border-right: 145px solid transparent;
+  border-bottom: 181px solid white;
+  transform: rotate(270deg);
+  left: -165px;
+  bottom: 25px;
+}
+.boat-nose::after   {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 4px solid transparent;
+    border-right: 76px solid transparent;
+    border-bottom: 181px solid white;
+    transform: rotate(203deg);
+    left: -33px;
+    bottom: 17px;
+  }
+.boat-mast-1 {
+  position: absolute;
+  width: 10px;
+  height: 300px;
+  background-color: #5d2738;
+  bottom: 110px;
+  left: 460px;
+}
+.boat-mast-1::before {
+  content: "";
+  position: absolute;
+  width: 90px;
+  border-top: 274px solid white;
+  border-left: 0px solid transparent;
+  border-right: 110px solid transparent;
+  transform: rotate(180deg);
+  right: 10px;
+}
+.boat-mast-2 {
+  position: absolute;
+  width: 10px;
+  height: 270px;
+  background-color: #5d2738;
+  bottom: 110px;
+  left: 630px;
+}
+
+.boat-mast-2::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  border-top: 240px solid white;
+  border-left: 0px solid transparent;
+  border-right: 110px solid transparent;
+  transform: rotate(180deg);
+  right: 10px;
+}
+
